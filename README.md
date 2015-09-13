@@ -1,6 +1,5 @@
-[![Build Status](https://travis-ci.org/GingerBear/chromecast-inhouse.svg?branch=master)](https://travis-ci.org/GingerBear/chromecast-inhouse)
 # chromecast-inhouse
-///
+proxy video website, send video to chromecast in the wifi
 
 Usage
 ```
