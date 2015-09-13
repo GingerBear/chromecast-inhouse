@@ -1,0 +1,128 @@
+@import "compass/css3";
+
+body {
+  margin: 0;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+nav {
+  float: right;
+  a {
+    color: #00B7FF;
+    &:after {
+      content: '|';
+      color: #aaa;
+      margin-left: 5px;
+    }
+    &:last-child:after {
+      content: '';
+    }
+  }
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.video-play-link {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  .play-button {
+    color: green;
+    float: right;
+  }
+  &:active {
+    background: #eee;
+  }
+}
+
+.search-results {
+  .search-result {
+    margin-bottom: 20px;
+    display: block;
+    img, span {
+      display: block;
+    }
+    img {
+      width: 100%;
+      margin: 0 auto;
+    }
+    span {
+      font-size: 15px;
+      width: 100%;
+    }
+    &.video-play-link {
+      border-bottom: 0;
+      padding: 0;
+    }
+    .result-type-label {
+      background: blue;
+      color: white;
+      padding: 10px;
+      box-sizing: border-box;
+      width: 100%;
+      margin: 0 auto;
+    }
+    &.video-play-link .result-type-label {
+      background: green;
+    }
+  }
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  background: #eee;
+  padding: 10px;
+  left: 0;
+  top: 0;
+  .search-container {
+    float: left;
+    input {
+      height: 35px;
+      font-size: 15px;
+      width: 135px;
+    }
+    [type="submit"] {
+      margin-left: -1000px;
+      float: left;
+    }
+  }
+  .control {
+    float: right;
+    a {
+      font-size: 20px;
+      display: inline-block;
+      height: 35px;
+      &:after {
+        vertical-align: middle;
+        height: 35px;
+        display: inline-block;
+        padding-top: 5px;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  body {
+    padding: 10px;
+    padding-top: 40px;
+  }
+  h1 {
+    margin-bottom: 0;
+  }
+}

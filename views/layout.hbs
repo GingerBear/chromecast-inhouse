@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <title>{{title}}</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js"></script>
+</head>
+<body>
+<nav>
+  <form class="search-container" action="/search"><input placeholder="Search" type="text" name="q" class="search"><input type="submit"></form>
+  <div class="control">
+    <a class="player-control" href="/player/stop">stop</a>
+    <a class="player-control" href="/player/pause">pause</a>
+    <a class="player-control" href="/player/resume">resume</a>
+  </div>
+</nav>
+{{{body}}}
+</body>
+<script src="/javascripts/app.js"></script>
+</html>

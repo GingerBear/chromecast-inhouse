@@ -1,0 +1,7 @@
+<h1>{{videoName}}</h1>
+
+<ul>
+  {{#each album.videos}}
+    <li><a class="video-play-link" href="/play/{{vid}}" title="{{video_name}}">{{video_name}} <span class="play-button">Play</span></a></li>
+  {{/each}}
+</ul>

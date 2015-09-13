@@ -1,0 +1,18 @@
+<h1>Search: {{q}}</h1>
+<ul class="search-results">
+  {{#each items}}
+    <li>
+      {{#if is_album}}
+        <a class="search-result" href="/album/{{aid}}" title="{{album_name}}">
+          <span class='result-type-label'><strong>{{album_name}}</strong></span>
+          <img src="{{hor_high_pic}}" alt="{{album_name}}">
+        </a>
+      {{else}}
+        <a class="search-result video-play-link" href="/play/{{vid}}" title="{{video_name}}">
+          <span class='result-type-label'>▶ <strong>{{video_name}}</strong></span>
+          <img src="{{hor_big_pic}}" alt="{{video_name}}">
+        </a>
+      {{/if}}
+    </li>
+  {{/each}}
+</ul>

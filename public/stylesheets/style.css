@@ -1,0 +1,151 @@
+/* line 3, ../sass/style.scss */
+body {
+  margin: 0;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+/* line 9, ../sass/style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 13, ../sass/style.scss */
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+/* line 18, ../sass/style.scss */
+nav {
+  float: right;
+}
+/* line 20, ../sass/style.scss */
+nav a {
+  color: #00B7FF;
+}
+/* line 22, ../sass/style.scss */
+nav a:after {
+  content: '|';
+  color: #aaa;
+  margin-left: 5px;
+}
+/* line 27, ../sass/style.scss */
+nav a:last-child:after {
+  content: '';
+}
+
+/* line 33, ../sass/style.scss */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* line 38, ../sass/style.scss */
+.video-play-link {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+/* line 42, ../sass/style.scss */
+.video-play-link .play-button {
+  color: green;
+  float: right;
+}
+/* line 46, ../sass/style.scss */
+.video-play-link:active {
+  background: #eee;
+}
+
+/* line 52, ../sass/style.scss */
+.search-results .search-result {
+  margin-bottom: 20px;
+  display: block;
+}
+/* line 55, ../sass/style.scss */
+.search-results .search-result img, .search-results .search-result span {
+  display: block;
+}
+/* line 58, ../sass/style.scss */
+.search-results .search-result img {
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 62, ../sass/style.scss */
+.search-results .search-result span {
+  font-size: 15px;
+  width: 100%;
+}
+/* line 66, ../sass/style.scss */
+.search-results .search-result.video-play-link {
+  border-bottom: 0;
+  padding: 0;
+}
+/* line 70, ../sass/style.scss */
+.search-results .search-result .result-type-label {
+  background: blue;
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 78, ../sass/style.scss */
+.search-results .search-result.video-play-link .result-type-label {
+  background: green;
+}
+
+/* line 84, ../sass/style.scss */
+nav {
+  width: 100%;
+  position: fixed;
+  background: #eee;
+  padding: 10px;
+  left: 0;
+  top: 0;
+}
+/* line 91, ../sass/style.scss */
+nav .search-container {
+  float: left;
+}
+/* line 93, ../sass/style.scss */
+nav .search-container input {
+  height: 35px;
+  font-size: 15px;
+  width: 135px;
+}
+/* line 98, ../sass/style.scss */
+nav .search-container [type="submit"] {
+  margin-left: -1000px;
+  float: left;
+}
+/* line 103, ../sass/style.scss */
+nav .control {
+  float: right;
+}
+/* line 105, ../sass/style.scss */
+nav .control a {
+  font-size: 20px;
+  display: inline-block;
+  height: 35px;
+}
+/* line 109, ../sass/style.scss */
+nav .control a:after {
+  vertical-align: middle;
+  height: 35px;
+  display: inline-block;
+  padding-top: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+  /* line 121, ../sass/style.scss */
+  body {
+    padding: 10px;
+    padding-top: 40px;
+  }
+
+  /* line 125, ../sass/style.scss */
+  h1 {
+    margin-bottom: 0;
+  }
+}
