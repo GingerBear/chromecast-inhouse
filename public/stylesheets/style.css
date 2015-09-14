@@ -119,18 +119,29 @@ nav .search-container [type="submit"] {
   margin-left: -1000px;
   float: left;
 }
-/* line 103, ../sass/style.scss */
-nav .control {
+
+/* line 105, ../sass/style.scss */
+nav.footer {
+  width: 100%;
+  position: fixed;
+  background: #eee;
+  padding: 10px;
+  left: 0;
+  bottom: 0;
+  top: auto;
+}
+/* line 113, ../sass/style.scss */
+nav.footer .control {
   float: right;
 }
-/* line 105, ../sass/style.scss */
-nav .control a {
+/* line 115, ../sass/style.scss */
+nav.footer .control a {
   font-size: 20px;
   display: inline-block;
   height: 35px;
 }
-/* line 109, ../sass/style.scss */
-nav .control a:after {
+/* line 119, ../sass/style.scss */
+nav.footer .control a:after {
   vertical-align: middle;
   height: 35px;
   display: inline-block;
@@ -138,13 +149,13 @@ nav .control a:after {
 }
 
 @media only screen and (max-width: 500px) {
-  /* line 121, ../sass/style.scss */
+  /* line 131, ../sass/style.scss */
   body {
     padding: 10px;
     padding-top: 40px;
   }
 
-  /* line 125, ../sass/style.scss */
+  /* line 135, ../sass/style.scss */
   h1 {
     margin-bottom: 0;
   }

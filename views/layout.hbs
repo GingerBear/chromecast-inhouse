@@ -12,13 +12,18 @@
 <body>
 <nav>
   <form class="search-container" action="/search"><input placeholder="Search" type="text" name="q" class="search"><input type="submit"></form>
+</nav>
+{{{body}}}
+
+<nav class="footer">
   <div class="control">
     <a class="player-control" href="/player/stop">stop</a>
     <a class="player-control" href="/player/pause">pause</a>
     <a class="player-control" href="/player/resume">resume</a>
+    <a class="player-control" href="/player/seek/-5">- 5s</a>
+    <a class="player-control" href="/player/seek/5">+ 5s</a>
   </div>
 </nav>
-{{{body}}}
 </body>
 <script src="/javascripts/app.js"></script>
 </html>

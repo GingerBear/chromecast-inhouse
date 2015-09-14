@@ -25,6 +25,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(function(req, res, next) {
+    req.app = app;
+    next();
+});
 
 app.use('/', index);
 app.use('/search', search);
@@ -33,6 +37,7 @@ app.use('/album', album);
 app.use('/player/stop', player.stop);
 app.use('/player/pause', player.pause);
 app.use('/player/resume', player.resume);
+app.use('/player/seek/:seconds', player.seek);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
